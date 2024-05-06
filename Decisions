@@ -12,3 +12,9 @@ Result: Initial epochs showed poor performance; training loss was high, and vali
 Architecture: LSTM with 64 hidden units, 2 layers, bidirectional=True, dropout=0.5.
 Learning Rate: 0.001
 Result: Significant overfitting, with validation loss increasing after initial epochs.
+
+## LSTM with lower dropout
+Architecture: LSTM with 128 hidden units, 2 layers, bidirectional=True, dropout=0.2.
+Regularization: L2 regularization with Adam optimizer.
+Learning Rate Scheduler: Implemented to reduce learning rate if validation loss plateaus.
+Result: TBD based on ongoing or upcoming training results.
