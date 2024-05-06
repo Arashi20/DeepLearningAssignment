@@ -1,12 +1,14 @@
-Architecture: CNN
-# Advantage:
+## Initial LSTM Model
+Architecture: LSTM with 128 hidden units, 1 layer, bidirectional=False.
+Learning Rate: 0.001
+Result: Overfitting observed with validation loss increasing over epochs.
 
+## LSTM with Bidirectional and Increased Layers
+Architecture: LSTM with 128 hidden units, 2 layers, bidirectional=True.
+Learning Rate: 0.001
+Result: Initial epochs showed poor performance; training loss was high, and validation loss decreased but remained high.
 
-# Disadvantage: 
-
-Training:
-
-Hyperparamter Tuning:
-
-Optimization methods:
-
+## LSTM with Dropout
+Architecture: LSTM with 64 hidden units, 2 layers, bidirectional=True, dropout=0.5.
+Learning Rate: 0.001
+Result: Significant overfitting, with validation loss increasing after initial epochs.
